@@ -1,6 +1,6 @@
 {
 	"name": "@structium/hcl",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Serialize and deserialize hcl2 files",
 	"keywords": [
 		"deserialize",

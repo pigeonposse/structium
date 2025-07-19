@@ -120,7 +120,8 @@ jobs:
       - name: Get updated versions if exists
         id: updated
         run: |
-          core_version=$(echo '${{ steps.changesets.outputs.publishedPackages }}' | jq -r '.[] | select(.name == "structium") | .version')
+          library_id=$(jq -r '.extra.libraryID' package.json)
+          core_version=$(echo '${{ steps.changesets.outputs.publishedPackages }}' | jq -r --arg id "$library_id" '.[] | select(.name == $id) | .version')
           core_version_major=${core_version%%.*}
           echo Set changesets outputs
           echo '${{ toJSON(steps.changesets.outputs) }}'

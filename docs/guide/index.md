@@ -54,7 +54,7 @@ Structium includes the following tools:
 
 - [See all tools](https://github.com/pigeonposse/structium/tree/main/packages/tools)
 
-Do you want to add a new tool? [Contribute](https://github.com/pigeonposse/structium/issues)
+> Do you want to add a new tool? [Contribute](https://github.com/pigeonposse/structium/issues)
 
 ## Why `structium`?
 
@@ -67,5 +67,5 @@ The intention is for developers to find _Structium_ a reliable, lightweight, and
 ## More information
 
 - [Library](core/index.md)
-- [tools](https://github.com/pigeonposse/structium/tree/main/packages/tools)
+- [Tools](https://github.com/pigeonposse/structium/tree/main/packages/tools)
 - [All in one tools](aio/index.md)

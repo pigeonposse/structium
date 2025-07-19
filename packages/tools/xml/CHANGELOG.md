@@ -1,5 +1,11 @@
 # @structium/xml
 
+## 0.0.3
+
+### Patch Changes
+
+- up docs
+
 ## 0.0.2
 
 ### Patch Changes

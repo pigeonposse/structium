@@ -57,6 +57,7 @@ export default defineConfig(
 		core,
 		docs : async () => ( {
 			version   : core.corePkg.version,
+			css       : `.image-container .image-bg { opacity: 0.3 !important; }`,
 			vitepress : {
 				ignoreDeadLinks : true,
 				themeConfig     : { outline: { level: [ 2, 3 ] } },
