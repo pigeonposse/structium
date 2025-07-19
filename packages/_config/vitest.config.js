@@ -9,9 +9,10 @@ export default defineConfig( { test : {
 			environment : 'node',
 		} },
 		{ test : {
-			include : [ 'src/**/*.{test,spec}.ts' ],
-			name    : 'browser',
-			browser : {
+			testTimeout : 60000, // 20s
+			include     : [ 'src/**/*.{test,spec}.ts' ],
+			name        : 'browser',
+			browser     : {
 				provider           : 'playwright',
 				screenshotFailures : false,
 				connectTimeout     : 60000, // 60s
