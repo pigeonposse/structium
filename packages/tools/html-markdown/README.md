@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/github/license/pigeonposse/structium?style=for-the-badge&color=green&logoColor=white)](/LICENSE)
 [![Version](https://img.shields.io/npm/v/structium?style=for-the-badge&color=blue&label=Version)](https://www.npmjs.com/package/structium)
 [![NPM package minimized gzipped size](https://img.shields.io/bundlejs/size/@structium/html-markdown?style=for-the-badge&color=orange&label=Minimized+size&logoColor=white)](https://www.npmjs.com/package/@structium/html-markdown)
-[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@structium/html-markdown/0.0.1?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/@structium/html-markdown)
+[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@structium/html-markdown/0.0.2?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/@structium/html-markdown)
 
 Serialize and deserialize HTML and Markdown files
 
@@ -49,10 +49,10 @@ deno add @structium/html-markdown
 - [Asn1](https://structium.pigeonposse.com/guide/asn1)
 - [Cson](https://structium.pigeonposse.com/guide/cson)
 - [Css](https://structium.pigeonposse.com/guide/css)
-- [Csv](https://structium.pigeonposse.com/guide/csv)
 - [Env](https://structium.pigeonposse.com/guide/env)
 - [Graphql](https://structium.pigeonposse.com/guide/graphql)
 - [Hcl](https://structium.pigeonposse.com/guide/hcl)
+- [Csv](https://structium.pigeonposse.com/guide/csv)
 - [Html-markdown](https://structium.pigeonposse.com/guide/html-markdown)
 - [Ini](https://structium.pigeonposse.com/guide/ini)
 - [Javascript](https://structium.pigeonposse.com/guide/javascript)

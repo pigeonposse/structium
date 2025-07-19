@@ -12,6 +12,7 @@ export default defineConfig( { test : { projects : [
 		browser : {
 			provider           : 'playwright',
 			screenshotFailures : false,
+			connectTimeout     : 60000,
 			// enabled   : true,
 			headless           : true,
 			instances          : [ { browser: 'chromium' } ],
