@@ -4,6 +4,7 @@ export default defineConfig( { test : {
 	testTimeout : 20000, // 20s
 	projects    : [
 		{ test : {
+			testTimeout : 20000, // 20s
 			include     : [ 'src/**/*.{test,spec}.ts' ],
 			name        : 'unit',
 			environment : 'node',
