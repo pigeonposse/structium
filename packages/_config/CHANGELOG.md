@@ -1,5 +1,11 @@
 # @structium/repo-config
 
+## 0.0.2
+
+### Patch Changes
+
+- Up first version (stable)
+
 ## 0.2.3
 
 ### Patch Changes

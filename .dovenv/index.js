@@ -33,10 +33,10 @@ export default defineConfig(
 						link    : '/guide/core',
 					},
 					{
-						title   : 'Set up',
+						title   : 'Tools',
 						icon    : '🚀 ',
-						details : 'Start your project with a template',
-						link    : '/guide/create',
+						details : 'Use the tools separately',
+						link    : '/guide/tools',
 					},
 				] },
 			} )

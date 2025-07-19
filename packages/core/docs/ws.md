@@ -1,11 +1,53 @@
 ## What is it `structium`?
 
-`structium` is a JavaScript Library for creating project templates.
+![BANNER](https://github.com/pigeonposse/structium/blob/main/docs/public/banner.png?raw=true)
 
-> Useful for create-binaries like `pnpm create backan`
+`structium` is a JavaScript Library for Serialize and deserialize any data structure in any environment (browser, node, etc).
 
 [Read more](https://www.npmjs.com/package/structium)
 
-Demo of the `structium` library:
+## Usage 
 
-![demo](https://github.com/pigeonposse/structium/raw/main/docs/public/example.gif)
+### Libary usage
+
+```js
+import { markdown } from 'structium'
+
+const data = markdown.deserialize(`
+# Example Markdown
+
+This is an example Markdown document.
+[Read more](https://structium.pigeonposse.com)`
+)
+
+console.log(data)
+
+```
+
+### Individual usage
+
+```js
+import { deserialize } from '@structium/toml'
+
+const data = deserialize(`
+name = "Alice"
+age = 30
+city = "New York"
+
+[address]
+street = "123 Main St"
+zip = "10001"
+
+hobbies = ["reading", "hiking", "painting"]
+`)
+console.log(data)
+
+```
+
+### CLI usage
+
+```bash
+npx structium yaml deserialize -i https://example.com/data.yaml -o data.json
+```
+
+

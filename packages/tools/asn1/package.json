@@ -1,6 +1,6 @@
 {
 	"name": "@structium/asn1",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Serialize and deserialize asn1",
 	"keywords": [
 		"asn1",

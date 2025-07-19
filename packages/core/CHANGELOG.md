@@ -1,5 +1,14 @@
 # structium
 
+## 0.0.2
+
+### Patch Changes
+
+- Up first version (stable)
+
+- Updated dependencies []:
+  - @structium/aio@0.0.2
+
 ## 0.2.3
 
 ### Patch Changes
