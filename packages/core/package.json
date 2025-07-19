@@ -1,0 +1,68 @@
+{
+	"name": "structium",
+	"version": "0.0.1",
+	"description": "Serialize and deserialize any data structure",
+	"keywords": [
+		"deserialize",
+		"files",
+		"format",
+		"library",
+		"node",
+		"pigeonposse",
+		"pp",
+		"serialize"
+	],
+	"homepage": "https://structium.pigeonposse.com/guide/core",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/structium/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/pigeonposse/structium/",
+		"directory": "packages/core"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/?popup=donate"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.mts",
+			"default": "./dist/index.mjs"
+		}
+	},
+	"main": "dist/index.mjs",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild",
+		"dev": "pnpx tsx src/bin.ts",
+		"example": "run(){ pnpx tsx examples/\"${@:1}\"/bin.ts; }; run $@",
+		"test": "vitest run -r src --passWithNoTests"
+	},
+	"dependencies": {
+		"@clippium/color": "1.0.1",
+		"@clippium/preset-colored": "1.0.1",
+		"@clippium/preset-config": "1.0.1",
+		"@structium/aio": "workspace:*",
+		"clippium": "1.0.1"
+	},
+	"devDependencies": {
+		"@structium/repo-config": "workspace:*"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

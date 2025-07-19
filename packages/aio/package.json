@@ -1,0 +1,83 @@
+{
+	"name": "@structium/aio",
+	"version": "0.0.1",
+	"description": "All in one structium packages. Serialize and deserialize any data structure",
+	"keywords": [
+		"deserialize",
+		"files",
+		"format",
+		"library",
+		"node",
+		"pigeonposse",
+		"pp",
+		"serialize"
+	],
+	"homepage": "https://structium.pigeonposse.com/guide/aio",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/structium/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/pigeonposse/structium/",
+		"directory": "packages/aio"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/?popup=donate"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.mjs"
+			}
+		}
+	},
+	"main": "dist/index.mjs",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild",
+		"build:all": "pnpm dlx @vercel/ncc build src/index.ts --out dist --minify -C --transpile-only",
+		"dev": "node examples/index.js"
+	},
+	"dependencies": {
+		"@structium/asn1": "workspace:*",
+		"@structium/cson": "workspace:*",
+		"@structium/css": "workspace:*",
+		"@structium/csv": "workspace:*",
+		"@structium/env": "workspace:*",
+		"@structium/graphql": "workspace:*",
+		"@structium/html-markdown": "workspace:*",
+		"@structium/ini": "workspace:*",
+		"@structium/javascript": "workspace:*",
+		"@structium/json": "workspace:*",
+		"@structium/jsonld": "workspace:*",
+		"@structium/lua": "workspace:*",
+		"@structium/plist": "workspace:*",
+		"@structium/sql": "workspace:*",
+		"@structium/svg": "workspace:*",
+		"@structium/toml": "workspace:*",
+		"@structium/typescript": "workspace:*",
+		"@structium/xml": "workspace:*",
+		"@structium/yaml": "workspace:*"
+	},
+	"devDependencies": {
+		"@structium/repo-config": "workspace:*"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

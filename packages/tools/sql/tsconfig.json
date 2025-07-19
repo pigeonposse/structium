@@ -1,0 +1,10 @@
+{
+	"extends": "./node_modules/@structium/repo-config/tsconfig.json",
+	"compilerOptions": {
+		"declaration": true,
+		"emitDeclarationOnly": true
+	},
+	"include": [
+		"./src",
+	]
+}

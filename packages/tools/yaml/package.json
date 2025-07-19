@@ -1,0 +1,66 @@
+{
+	"name": "@structium/yaml",
+	"version": "0.0.1",
+	"description": "Serialize and deserialize YAML",
+	"keywords": [
+		"deserialize",
+		"files",
+		"format",
+		"library",
+		"node",
+		"pigeonposse",
+		"pp",
+		"serialize",
+		"yaml",
+		"yml"
+	],
+	"homepage": "https://structium.pigeonposse.com/guide/yaml",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/structium/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/pigeonposse/structium/",
+		"directory": "packages/tools/yaml"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/?popup=donate"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			}
+		}
+	},
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "node build.js",
+		"dev": "pnpm dlx tsx src/index.example.ts",
+		"test": "vitest run"
+	},
+	"devDependencies": {
+		"@structium/repo-config": "workspace:*",
+		"@types/js-yaml": "4.0.9",
+		"js-yaml": "4.1.0"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

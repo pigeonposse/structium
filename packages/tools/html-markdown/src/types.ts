@@ -1,0 +1,8 @@
+export type { Options as RehypeDocumentOptions } from 'rehype-document'
+export type { Options as RehypeFormatOptions } from 'rehype-format'
+export type { Options as RehypeParseOptions } from 'rehype-parse'
+export type { Options as RehypeStringifyOptions } from 'rehype-stringify'
+export type { Options as RehypeRemarkOptions } from 'rehype-remark'
+export type { Options as RemarkRehypeOptions } from 'remark-rehype'
+export type { Options as RemarkStringifyOptions } from 'remark-stringify'
+export type { Options as RemarkParseOptions } from 'remark-parse'

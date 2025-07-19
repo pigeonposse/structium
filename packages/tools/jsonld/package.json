@@ -1,0 +1,65 @@
+{
+	"name": "@structium/jsonld",
+	"version": "0.0.1",
+	"description": "Serialize and deserialize JSON-LD",
+	"keywords": [
+		"deserialize",
+		"files",
+		"format",
+		"json",
+		"library",
+		"node",
+		"pigeonposse",
+		"pp",
+		"serialize"
+	],
+	"homepage": "https://structium.pigeonposse.com/guide/jsonld",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/structium/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/pigeonposse/structium/",
+		"directory": "packages/tools/jsonld"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/?popup=donate"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			}
+		}
+	},
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "node build.js",
+		"dev": "pnpm dlx tsx src/index.example.ts",
+		"test": "vitest run"
+	},
+	"devDependencies": {
+		"@structium/repo-config": "workspace:*",
+		"@types/jsonld": "1.5.15",
+		"jsonld": "8.3.3"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

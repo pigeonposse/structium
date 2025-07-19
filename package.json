@@ -1,0 +1,115 @@
+{
+	"name": "structium-monorepo",
+	"private": true,
+	"description": "Serialize and deserialize any data structure in any environment",
+	"keywords": [
+		"browser",
+		"deserialize",
+		"devs",
+		"files",
+		"format",
+		"javascript",
+		"library",
+		"node",
+		"pigeonposse",
+		"pp",
+		"serialize",
+		"typescript"
+	],
+	"homepage": "https://structium.pigeonposse.com",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/structium/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pigeonposse/structium"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/?popup=donate"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
+	"type": "module",
+	"workspaces": [
+		"packages/*",
+		"packages/tools/*"
+	],
+	"scripts": {
+		"+": "pnpm -F",
+		".": "dovenv",
+		"build": "pnpm build-tools && pnpm -F aio build && pnpm -F structium build",
+		"build-doc": "dovenv predocs && dovenv docs build",
+		"build-tools": "pnpm -F './packages/tools/*' build",
+		"core": "pnpm -F structium",
+		"lint:commit": "dovenv lint commitlint --silent",
+		"lint:eslint": "dovenv lint eslint --silent",
+		"lint:pkg": "dovenv lint custom -k pkg --silent",
+		"lint:staged": "dovenv lint staged --silent",
+		"prepare": "dovenv git husky --silent",
+		"test": "pnpm run --sequential \"/test:.*/\"",
+		"test:check": "pnpm --parallel check",
+		"test:check-ws": "dovenv check --silent",
+		"test:pkg": "pnpm --parallel test",
+		"test:transform-ws": "dovenv transform --silent"
+	},
+	"devDependencies": {
+		"@changesets/changelog-github": "0.5.1",
+		"@dovenv/core": "1.5.34",
+		"@dovenv/theme-pigeonposse": "1.5.34",
+		"@types/node": "24.0.15",
+		"@vitest/browser": "3.2.4",
+		"eslint": "9.31.0",
+		"playwright": "1.54.1",
+		"tslib": "2.8.1",
+		"tsup": "8.5.0",
+		"typescript": "5.8.3",
+		"unbuild": "3.5.0",
+		"vitest": "3.2.4"
+	},
+	"packageManager": "pnpm@10.13.1",
+	"engines": {
+		"node": ">=20.0.0",
+		"pnpm": ">=8.10.0"
+	},
+	"extra": {
+		"id": "structium",
+		"productName": "structium",
+		"libraryId": "structium",
+		"repoId": "structium",
+		"shortDesc": "csv, yaml, toml, xml, html, markdown, json, and more",
+		"action": "Serialize and deserialize any data structure",
+		"libraryUrl": "https://www.npmjs.com/package/structium",
+		"licenseUrl": "https://github.com/pigeonposse/structium/blob/main/LICENSE",
+		"changelogUrl": "https://github.com/pigeonposse/structium/blob/main/packages/core/CHANGELOG.md",
+		"contributingUrl": "https://github.com/pigeonposse/.github/blob/main/CONTRIBUTING.md",
+		"rawRepoUrl": "https://raw.githubusercontent.com/pigeonposse/structium/tree/main",
+		"docsUrl": "https://structium.pigeonposse.com",
+		"type": "library",
+		"collective": {
+			"id": "pigeonposse",
+			"name": "PigeonPosse",
+			"funding": "https://pigeonposse.com/?popup=donate",
+			"gh": "https://github.com/pigeonposse",
+			"about": "https://pigeonposse.com?popup=about",
+			"url": "https://pigeonposse.com",
+			"web": "https://pigeonposse.com",
+			"email": "dev@pigeonposse.com",
+			"socialUser": {
+				"twitter": "pigeonposse_",
+				"instagram": "pigeon.posse",
+				"medium": "pigeonposse"
+			},
+			"social": {
+				"twitter": "https://twitter.com/pigeonposse_",
+				"instagram": "https://www.instagram.com/pigeon.posse/",
+				"medium": "https://medium.com/@pigeonposse"
+			}
+		}
+	}
+}
