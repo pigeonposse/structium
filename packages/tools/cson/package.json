@@ -1,6 +1,6 @@
 {
 	"name": "@structium/cson",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Serialize and deserialize CSON (Coffeescript Object Notation)",
 	"keywords": [
 		"css",

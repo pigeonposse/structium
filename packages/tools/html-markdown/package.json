@@ -1,6 +1,6 @@
 {
 	"name": "@structium/html-markdown",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Serialize and deserialize HTML and Markdown files",
 	"keywords": [
 		"deserialize",

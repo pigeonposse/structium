@@ -1,6 +1,6 @@
 {
 	"name": "@structium/aio",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "All in one structium packages. Serialize and deserialize any data structure",
 	"keywords": [
 		"deserialize",

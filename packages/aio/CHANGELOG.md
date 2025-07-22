@@ -1,5 +1,32 @@
 # @structium/utils
 
+## 0.0.4
+
+### Patch Changes
+
+- up version with provenance
+
+- Updated dependencies []:
+  - @structium/html-markdown@0.0.4
+  - @structium/javascript@0.0.4
+  - @structium/typescript@0.0.4
+  - @structium/graphql@0.0.4
+  - @structium/jsonld@0.0.4
+  - @structium/plist@0.0.4
+  - @structium/asn1@0.0.4
+  - @structium/cson@0.0.4
+  - @structium/json@0.0.4
+  - @structium/toml@0.0.4
+  - @structium/yaml@0.0.4
+  - @structium/css@0.0.4
+  - @structium/csv@0.0.4
+  - @structium/env@0.0.4
+  - @structium/ini@0.0.4
+  - @structium/lua@0.0.4
+  - @structium/sql@0.0.4
+  - @structium/svg@0.0.4
+  - @structium/xml@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes
