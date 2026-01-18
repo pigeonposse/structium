@@ -55,7 +55,7 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"@sveltejs/acorn-typescript": "1.0.5",
+		"@sveltejs/acorn-typescript": "1.0.8",
 		"acorn": "8.15.0",
 		"astring": "1.9.0"
 	},

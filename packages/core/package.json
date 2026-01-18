@@ -52,11 +52,11 @@
 		"test": "vitest run -r src --passWithNoTests"
 	},
 	"dependencies": {
-		"@clippium/color": "1.0.1",
-		"@clippium/preset-colored": "1.0.1",
-		"@clippium/preset-config": "1.0.1",
+		"@clippium/color": "1.0.2",
+		"@clippium/preset-colored": "1.0.2",
+		"@clippium/preset-config": "1.0.2",
 		"@structium/aio": "workspace:*",
-		"clippium": "1.0.1"
+		"clippium": "1.0.2"
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*"

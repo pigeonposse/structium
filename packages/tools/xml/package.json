@@ -55,7 +55,7 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"fast-xml-parser": "5.2.5"
+		"fast-xml-parser": "5.3.3"
 	},
 	"publishConfig": {
 		"access": "public",

@@ -57,7 +57,7 @@
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
 		"@types/js-yaml": "4.0.9",
-		"js-yaml": "4.1.0"
+		"js-yaml": "4.1.1"
 	},
 	"publishConfig": {
 		"access": "public",
