@@ -1,6 +1,6 @@
 {
 	"name": "structium",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Serialize and deserialize any data structure",
 	"keywords": [
 		"deserialize",

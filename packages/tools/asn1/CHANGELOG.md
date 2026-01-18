@@ -1,5 +1,11 @@
 # @structium/asn1
 
+## 0.0.5
+
+### Patch Changes
+
+- up deps
+
 ## 0.0.4
 
 ### Patch Changes
