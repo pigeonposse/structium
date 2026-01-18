@@ -1,3 +1,4 @@
+import { playwright }   from '@vitest/browser-playwright'
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig( { test : {
@@ -14,7 +15,8 @@ export default defineConfig( { test : {
 			include     : [ 'src/**/*.{test,spec}.ts' ],
 			name        : 'browser',
 			browser     : {
-				provider           : 'playwright',
+
+				provider           : playwright(),
 				screenshotFailures : false,
 				connectTimeout     : 60000, // 60s
 				// enabled   : true,

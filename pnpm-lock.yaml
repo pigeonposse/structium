@@ -37,9 +37,9 @@ importers:
       '@types/node':
         specifier: 25.0.9
         version: 25.0.9
-      '@vitest/browser':
+      '@vitest/browser-playwright':
         specifier: 4.0.17
-        version: 4.0.17(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))(vitest@4.0.17(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))
+        version: 4.0.17(playwright@1.57.0)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))(vitest@4.0.17)
       eslint:
         specifier: 9.39.2
         version: 9.39.2(jiti@2.6.1)
@@ -60,7 +60,7 @@ importers:
         version: 3.6.1(typescript@5.9.3)(vue@3.5.18(typescript@5.9.3))
       vitest:
         specifier: 4.0.17
-        version: 4.0.17(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0)
+        version: 4.0.17(@types/node@25.0.9)(@vitest/browser-playwright@4.0.17)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0)
 
   packages/_config: {}
 
@@ -2768,6 +2768,12 @@ packages:
     peerDependencies:
       vite: '>=5.4.21'
       vue: ^3.2.25
+
+  '@vitest/browser-playwright@4.0.17':
+    resolution: {integrity: sha512-CE9nlzslHX6Qz//MVrjpulTC9IgtXTbJ+q7Rx1HD+IeSOWv4NHIRNHPA6dB4x01d9paEqt+TvoqZfmgq40DxEQ==}
+    peerDependencies:
+      playwright: '*'
+      vitest: 4.0.17
 
   '@vitest/browser@4.0.17':
     resolution: {integrity: sha512-cgf2JZk2fv5or3efmOrRJe1V9Md89BPgz4ntzbf84yAb+z2hW6niaGFinl9aFzPZ1q3TGfWZQWZ9gXTFThs2Qw==}
@@ -10272,7 +10278,20 @@ snapshots:
       vite: 7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0)
       vue: 3.5.18(typescript@5.9.3)
 
-  '@vitest/browser@4.0.17(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))(vitest@4.0.17(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))':
+  '@vitest/browser-playwright@4.0.17(playwright@1.57.0)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))(vitest@4.0.17)':
+    dependencies:
+      '@vitest/browser': 4.0.17(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))(vitest@4.0.17)
+      '@vitest/mocker': 4.0.17(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))
+      playwright: 1.57.0
+      tinyrainbow: 3.0.3
+      vitest: 4.0.17(@types/node@25.0.9)(@vitest/browser-playwright@4.0.17)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0)
+    transitivePeerDependencies:
+      - bufferutil
+      - msw
+      - utf-8-validate
+      - vite
+
+  '@vitest/browser@4.0.17(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))(vitest@4.0.17)':
     dependencies:
       '@vitest/mocker': 4.0.17(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))
       '@vitest/utils': 4.0.17
@@ -10281,7 +10300,7 @@ snapshots:
       pngjs: 7.0.0
       sirv: 3.0.2
       tinyrainbow: 3.0.3
-      vitest: 4.0.17(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0)
+      vitest: 4.0.17(@types/node@25.0.9)(@vitest/browser-playwright@4.0.17)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0)
       ws: 8.18.3
     transitivePeerDependencies:
       - bufferutil
@@ -15406,7 +15425,7 @@ snapshots:
       - universal-cookie
       - yaml
 
-  vitest@4.0.17(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0):
+  vitest@4.0.17(@types/node@25.0.9)(@vitest/browser-playwright@4.0.17)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0):
     dependencies:
       '@vitest/expect': 4.0.17
       '@vitest/mocker': 4.0.17(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))
@@ -15430,6 +15449,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 25.0.9
+      '@vitest/browser-playwright': 4.0.17(playwright@1.57.0)(vite@7.3.1(@types/node@25.0.9)(jiti@2.6.1)(terser@5.43.1)(yaml@2.8.0))(vitest@4.0.17)
     transitivePeerDependencies:
       - jiti
       - less

@@ -64,7 +64,7 @@
 		"@dovenv/core": "~1.6.1",
 		"@dovenv/theme-pigeonposse": "~1.6.1",
 		"@types/node": "25.0.9",
-		"@vitest/browser": "4.0.17",
+		"@vitest/browser-playwright": "4.0.17",
 		"eslint": "9.39.2",
 		"playwright": "1.57.0",
 		"tslib": "2.8.1",
