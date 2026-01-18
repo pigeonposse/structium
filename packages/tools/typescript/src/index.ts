@@ -15,10 +15,10 @@ export type DeserializeOptions = AcornOptions & { ts: Parameters<typeof tsPlugin
 /**
  * Deserialize a Typescript code string into an ESTree-compatible AST.
  *
- * @template Res - The expected return AST type (default is ESTree.Program)
- * @param   {string}             code      - Typescript source code
- * @param   {DeserializeOptions} [options] - Acorn parsing options
- * @returns {Promise<Res>}                 - Parsed Typescript AST
+ * @template                      Res       - The expected return AST type (default is ESTree.Program)
+ * @param    {string}             code      - Typescript source code
+ * @param    {DeserializeOptions} [options] - Acorn parsing options
+ * @returns  {Promise<Res>}                 - Parsed Typescript AST
  * @example
  * const ast = await deserialize('const a = 1')
  * console.log(ast.body)

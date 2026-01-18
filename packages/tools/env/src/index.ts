@@ -46,10 +46,9 @@ const parse = ( src: string ) => {
 /**
  * Deserialize an environment variable file content string into an object.
  *
- * @template                Res     - The expected return type of the deserialized object
- * @param    {string}       input   - The environment variable file content
- * @param    {string}       content - The environment variable file content string
- * @returns  {Promise<Res>}         - A promise that resolves to the deserialized object
+ * @template                Res   - The expected return type of the deserialized object
+ * @param    {string}       input - The environment variable file content
+ * @returns  {Promise<Res>}       - A promise that resolves to the deserialized object
  * @throws {Error} If the input string is not valid
  * @example
  *

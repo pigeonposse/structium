@@ -7,10 +7,10 @@ type DeserializeOptions = yamlLib.LoadOptions
 /**
  * Deserialize a YAML string into an object.
  *
- * @template Res - The expected return type of the deserialized object
- * @param   {string}       content   - The YAML content string
- * @param   {object}       [options] - Options
- * @returns {Promise<Res>}           - The deserialized JavaScript object
+ * @template                Res       - The expected return type of the deserialized object
+ * @param    {string}       content   - The YAML content string
+ * @param    {object}       [options] - Options
+ * @returns  {Promise<Res>}           - The deserialized JavaScript object
  * @throws {Error} If the input string is not valid YAML
  * @example import { deserialize } from "@structium/yaml"
  *

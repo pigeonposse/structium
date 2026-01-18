@@ -13,10 +13,10 @@ type DeserializeOptions = X2jOptions & { validation: validationOptions }
 /**
  * Parses an XML content string into a JavaScript object.
  *
- * @template Res - The expected return type of the parsed object.
- * @param   {string}       input     - The XML content string to be parsed.
- * @param   {object}       [options] - Options to pass to the XML parser.
- * @returns {Promise<Res>}           - A promise that resolves to the parsed XML as an object.
+ * @template                Res       - The expected return type of the parsed object.
+ * @param    {string}       input     - The XML content string to be parsed.
+ * @param    {object}       [options] - Options to pass to the XML parser.
+ * @returns  {Promise<Res>}           - A promise that resolves to the parsed XML as an object.
  * @throws {Error} If there is an error parsing the XML content.
  */
 export const deserialize = async <Res extends CommonObj = CommonObj>( input: string, options?: DeserializeOptions ) => {
@@ -45,9 +45,9 @@ export const deserialize = async <Res extends CommonObj = CommonObj>( input: str
 /**
  * Converts a JavaScript object into an XML string.
  *
- * @template I - The type of the object to be converted.
- * @param   {I}               input - The object to be converted.
- * @returns {Promise<string>}       - A promise that resolves to the XML string.
+ * @template                   I     - The type of the object to be converted.
+ * @param    {I}               input - The object to be converted.
+ * @returns  {Promise<string>}       - A promise that resolves to the XML string.
  */
 export const serialize = async <I extends CommonObj = CommonObj>( input: I ) => {
 

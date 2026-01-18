@@ -20,10 +20,10 @@ export type {
 /**
  * Deserialize a CSV string into an object.
  *
- * @template Res - The expected return type of the deserialized object
- * @param   {string}       input     - The CSV content
- * @param   {object}       [options] - Options to pass to `fast-csv`
- * @returns {Promise<Res>}           - A promise that resolves to the deserialized object
+ * @template                Res       - The expected return type of the deserialized object
+ * @param    {string}       input     - The CSV content
+ * @param    {object}       [options] - Options to pass to `fast-csv`
+ * @returns  {Promise<Res>}           - A promise that resolves to the deserialized object
  */
 export const deserialize = async <Res extends string[]>(
 	input: string,
@@ -44,10 +44,10 @@ export const deserialize = async <Res extends string[]>(
 /**
  * Serialize an object or array of objects into a CSV string.
  *
- * @template I - The type of the object(s) to serialize
- * @param   {I}                input     - The object or array of objects to serialize
- * @param   {SerializeOptions} [options] - Options to pass to `fast-csv`
- * @returns {Promise<string>}            - A promise that resolves to the CSV string
+ * @template                    I         - The type of the object(s) to serialize
+ * @param    {I}                input     - The object or array of objects to serialize
+ * @param    {SerializeOptions} [options] - Options to pass to `fast-csv`
+ * @returns  {Promise<string>}            - A promise that resolves to the CSV string
  */
 export const serialize = async <I extends CommonCSV>(
 	input: I,

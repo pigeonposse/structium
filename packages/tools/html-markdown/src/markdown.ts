@@ -67,10 +67,10 @@ export const deserialize = async (
 /**
  * Serialize a Markdown data structure into a Markdown string.
  *
- * @template I - The type of the Markdown data to serialize
- * @param   {I}                input     - The Markdown data to serialize
- * @param   {SerializeOptions} [options] - Options for the serialization
- * @returns {Promise<string>}            - A promise that resolves to the serialized Markdown string
+ * @template                    I         - The type of the Markdown data to serialize
+ * @param    {I}                input     - The Markdown data to serialize
+ * @param    {SerializeOptions} [options] - Options for the serialization
+ * @returns  {Promise<string>}            - A promise that resolves to the serialized Markdown string
  */
 
 export const serialize = async <I extends MarkdownData>(

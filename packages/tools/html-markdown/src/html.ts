@@ -102,10 +102,10 @@ const getSerializeProcessor = ( options?: SerializeOptions ) => unified().use( r
 /**
  * Serialize a JavaScript object into an HTML string.
  *
- * @template I - The type of the HTML data to serialize
- * @param   {I}                input     - The HTML data to serialize
- * @param   {SerializeOptions} [options] - Options for the serialization
- * @returns {Promise<string>}            - A promise that resolves to the serialized HTML string
+ * @template                    I         - The type of the HTML data to serialize
+ * @param    {I}                input     - The HTML data to serialize
+ * @param    {SerializeOptions} [options] - Options for the serialization
+ * @returns  {Promise<string>}            - A promise that resolves to the serialized HTML string
  */
 export const serialize = async <I extends HTMLData>( input: I, options?: SerializeOptions ): Promise<string> => {
 

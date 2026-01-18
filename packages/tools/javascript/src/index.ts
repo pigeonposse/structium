@@ -14,10 +14,10 @@ export type DeserializeOptions = AcornOptions
 /**
  * Deserialize a JavaScript code string into an ESTree-compatible AST.
  *
- * @template Res - The expected return AST type (default is ESTree.Program)
- * @param   {string}             code      - JavaScript source code
- * @param   {DeserializeOptions} [options] - Acorn parsing options
- * @returns {Promise<Res>}                 - Parsed JavaScript AST
+ * @template                      Res       - The expected return AST type (default is ESTree.Program)
+ * @param    {string}             code      - JavaScript source code
+ * @param    {DeserializeOptions} [options] - Acorn parsing options
+ * @returns  {Promise<Res>}                 - Parsed JavaScript AST
  * @example
  * const ast = await deserialize('const a = 1')
  * console.log(ast.body)

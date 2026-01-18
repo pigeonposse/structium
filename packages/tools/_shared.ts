@@ -1,4 +1,4 @@
-export type CommonObj =
-	Record<string, unknown>
-	| Record<string, unknown>[]
-	| unknown[]
+export type CommonObj
+	= Record<string, unknown>
+		| Record<string, unknown>[]
+		| unknown[]

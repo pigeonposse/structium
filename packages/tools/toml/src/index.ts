@@ -10,10 +10,10 @@ type DeserializeOptions = Parameters<typeof parse>[1]
 /**
  * Deserialize a TOML string into a JavaScript object.
  *
- * @template Res - The expected return type of the deserialized object
- * @param   {string}       content   - The TOML content string
- * @param   {object}       [options] - Options
- * @returns {Promise<Res>}           - The deserialized JavaScript object
+ * @template                Res       - The expected return type of the deserialized object
+ * @param    {string}       content   - The TOML content string
+ * @param    {object}       [options] - Options
+ * @returns  {Promise<Res>}           - The deserialized JavaScript object
  * @example
  *
  * const tomlContent = `

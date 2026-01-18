@@ -16,10 +16,10 @@ export type DeserializeOptions = IniLib.DecodeOptions
 /**
  * Deserialize an INI string into a JavaScript object.
  *
- * @template Res - The expected return type of the deserialized object
- * @param   {string}       input     - The INI content string
- * @param   {object}       [options] - Options
- * @returns {Promise<Res>}           - The deserialized JavaScript object
+ * @template                Res       - The expected return type of the deserialized object
+ * @param    {string}       input     - The INI content string
+ * @param    {object}       [options] - Options
+ * @returns  {Promise<Res>}           - The deserialized JavaScript object
  * @throws  {Error}          - If the content is detected as HTML
  */
 
@@ -36,10 +36,10 @@ export type SerializeOptions = IniLib.EncodeOptions
 /**
  * Serialize a JavaScript object into an INI string.
  *
- * @template I - The type of the object to be converted.
- * @param   {I}                input     - The object to be converted.
- * @param   {SerializeOptions} [options] - Options to pass to `ini.stringify`
- * @returns {Promise<string>}            - A promise that resolves to the INI string.
+ * @template                    I         - The type of the object to be converted.
+ * @param    {I}                input     - The object to be converted.
+ * @param    {SerializeOptions} [options] - Options to pass to `ini.stringify`
+ * @returns  {Promise<string>}            - A promise that resolves to the INI string.
  */
 export const serialize = async <I extends CommonObj>( input: I, options?: SerializeOptions ): Promise<string> => {
 
