@@ -1,6 +1,6 @@
 {
 	"name": "@structium/typescript",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Serialize and deserialize typescript code (TS)",
 	"keywords": [
 		"deserialize",

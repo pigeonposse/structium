@@ -1,5 +1,11 @@
 # @structium/json
 
+## 0.0.7
+
+### Patch Changes
+
+- fix core library
+
 ## 0.0.6
 
 ### Patch Changes

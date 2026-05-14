@@ -1,4 +1,8 @@
-import * as tools from '@structium/aio'
+
+import {
+	yaml,
+	toml,
+} from '@structium/aio'
 
 export const isBrowser = typeof window !== 'undefined'
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -176,8 +180,6 @@ export const findAndImport = async <T>( paths: string[] ) => {
 
 }
 
-export { tools }
-
 export const writeObject = async ( path: string, data: object | string ) => {
 
 	if ( path.endsWith( '.json' ) ) {
@@ -188,13 +190,13 @@ export const writeObject = async ( path: string, data: object | string ) => {
 	}
 	else if ( path.endsWith( '.toml' ) || path.endsWith( '.tml' ) ) {
 
-		const content = typeof data === 'object' ? await tools.toml.serialize( data ) : JSON.stringify( data )
+		const content = typeof data === 'object' ? await toml.serialize( data ) : JSON.stringify( data )
 		await writeFile( path, content )
 
 	}
 	else if ( path.endsWith( '.yaml' ) || path.endsWith( '.yml' ) ) {
 
-		const content = typeof data === 'object' ? await tools.yaml.serialize( data ) : JSON.stringify( data )
+		const content = typeof data === 'object' ? await yaml.serialize( data ) : JSON.stringify( data )
 		await writeFile( path, content )
 
 	}

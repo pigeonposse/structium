@@ -1,6 +1,6 @@
 {
 	"name": "structium",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Serialize and deserialize any data structure",
 	"keywords": [
 		"deserialize",
@@ -42,6 +42,7 @@
 	"main": "dist/index.mjs",
 	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
+	"bin": "./dist/bin.mjs",
 	"files": [
 		"dist"
 	],

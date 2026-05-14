@@ -1,5 +1,32 @@
 # @structium/utils
 
+## 0.0.7
+
+### Patch Changes
+
+- fix core library
+
+- Updated dependencies []:
+  - @structium/lua@0.0.7
+  - @structium/asn1@0.0.7
+  - @structium/cson@0.0.7
+  - @structium/css@0.0.7
+  - @structium/csv@0.0.7
+  - @structium/env@0.0.7
+  - @structium/graphql@0.0.7
+  - @structium/html-markdown@0.0.7
+  - @structium/ini@0.0.7
+  - @structium/javascript@0.0.7
+  - @structium/json@0.0.7
+  - @structium/jsonld@0.0.7
+  - @structium/plist@0.0.7
+  - @structium/sql@0.0.7
+  - @structium/svg@0.0.7
+  - @structium/toml@0.0.7
+  - @structium/typescript@0.0.7
+  - @structium/xml@0.0.7
+  - @structium/yaml@0.0.7
+
 ## 0.0.6
 
 ### Patch Changes

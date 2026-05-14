@@ -1,6 +1,6 @@
 {
 	"name": "@structium/aio",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "All in one structium packages. Serialize and deserialize any data structure",
 	"keywords": [
 		"deserialize",
@@ -50,7 +50,8 @@
 	"scripts": {
 		"build": "unbuild",
 		"build:all": "pnpm dlx @vercel/ncc build src/index.ts --out dist --minify -C --transpile-only",
-		"dev": "node examples/index.js"
+		"dev": "node examples/index.js",
+		"test": "vitest run"
 	},
 	"dependencies": {
 		"@structium/asn1": "workspace:*",
