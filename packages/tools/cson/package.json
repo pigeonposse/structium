@@ -1,6 +1,6 @@
 {
 	"name": "@structium/cson",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize CSON (Coffeescript Object Notation)",
 	"keywords": [
 		"css",
@@ -55,7 +55,7 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"cson-parser": "4.0.9"
+		"cson-parser": "~4.0.9"
 	},
 	"publishConfig": {
 		"access": "public",

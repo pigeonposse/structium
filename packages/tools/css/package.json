@@ -1,6 +1,6 @@
 {
 	"name": "@structium/css",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize css",
 	"keywords": [
 		"css",
@@ -55,7 +55,7 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"postcss": "8.5.6"
+		"postcss": "~8.5.14"
 	},
 	"publishConfig": {
 		"access": "public",

@@ -1,6 +1,6 @@
 {
 	"name": "@structium/toml",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize TOML",
 	"keywords": [
 		"deserialize",
@@ -56,7 +56,7 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"smol-toml": "1.6.0"
+		"smol-toml": "~1.6.1"
 	},
 	"publishConfig": {
 		"access": "public",

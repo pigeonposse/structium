@@ -1,6 +1,6 @@
 {
 	"name": "@structium/typescript",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize typescript code (TS)",
 	"keywords": [
 		"deserialize",
@@ -55,9 +55,9 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"@sveltejs/acorn-typescript": "1.0.8",
-		"acorn": "8.15.0",
-		"astring": "1.9.0"
+		"@sveltejs/acorn-typescript": "~1.0.9",
+		"acorn": "~8.16.0",
+		"astring": "~1.9.0"
 	},
 	"publishConfig": {
 		"access": "public",

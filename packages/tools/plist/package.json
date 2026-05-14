@@ -1,6 +1,6 @@
 {
 	"name": "@structium/plist",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize plist",
 	"keywords": [
 		"deserialize",
@@ -54,7 +54,7 @@
 		"test": "vitest run"
 	},
 	"devDependencies": {
-		"@plist/plist": "1.0.0",
+		"@plist/plist": "~1.0.0",
 		"@structium/repo-config": "workspace:*"
 	},
 	"publishConfig": {

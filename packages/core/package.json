@@ -1,6 +1,6 @@
 {
 	"name": "structium",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize any data structure",
 	"keywords": [
 		"deserialize",
@@ -52,11 +52,11 @@
 		"test": "vitest run -r src --passWithNoTests"
 	},
 	"dependencies": {
-		"@clippium/color": "1.0.2",
-		"@clippium/preset-colored": "1.0.2",
-		"@clippium/preset-config": "1.0.2",
+		"@clippium/color": "~1.0.3",
+		"@clippium/preset-colored": "~1.0.3",
+		"@clippium/preset-config": "~1.0.3",
 		"@structium/aio": "workspace:*",
-		"clippium": "1.0.2"
+		"clippium": "~1.0.3"
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*"

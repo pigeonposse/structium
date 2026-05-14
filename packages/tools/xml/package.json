@@ -1,6 +1,6 @@
 {
 	"name": "@structium/xml",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize XML",
 	"keywords": [
 		"deserialize",
@@ -55,7 +55,9 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"fast-xml-parser": "5.3.7"
+		"fast-xml-builder": "~1.2.0",
+		"fast-xml-parser": "~5.8.0",
+		"fast-xml-validator": "~1.1.0"
 	},
 	"publishConfig": {
 		"access": "public",

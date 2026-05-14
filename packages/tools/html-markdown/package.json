@@ -1,6 +1,6 @@
 {
 	"name": "@structium/html-markdown",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize HTML and Markdown files",
 	"keywords": [
 		"deserialize",
@@ -58,16 +58,16 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"rehype-document": "7.0.3",
-		"rehype-format": "5.0.1",
-		"rehype-parse": "9.0.1",
-		"rehype-remark": "10.0.1",
-		"rehype-stringify": "10.0.1",
-		"remark-parse": "11.0.0",
-		"remark-rehype": "11.1.2",
-		"remark-stringify": "11.0.0",
-		"unified": "11.0.5",
-		"vfile-reporter": "8.1.1"
+		"rehype-document": "~7.0.3",
+		"rehype-format": "~5.0.1",
+		"rehype-parse": "~9.0.1",
+		"rehype-remark": "~10.0.1",
+		"rehype-stringify": "~10.0.1",
+		"remark-parse": "~11.0.0",
+		"remark-rehype": "~11.1.2",
+		"remark-stringify": "~11.0.0",
+		"unified": "~11.0.5",
+		"vfile-reporter": "~8.1.1"
 	},
 	"publishConfig": {
 		"access": "public",

@@ -1,6 +1,6 @@
 {
 	"name": "@structium/yaml",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize YAML",
 	"keywords": [
 		"deserialize",
@@ -56,8 +56,8 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"@types/js-yaml": "4.0.9",
-		"js-yaml": "4.1.1"
+		"@types/js-yaml": "~4.0.9",
+		"js-yaml": "~4.1.1"
 	},
 	"publishConfig": {
 		"access": "public",

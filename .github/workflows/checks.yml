@@ -35,15 +35,15 @@ jobs:
       #########################################################################
 
       - name: ⬇️🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.12.1
+        uses: styfle/cancel-workflow-action@0.13.1
       - name: ⬇️🛎 Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: ⬇️🥡 Install pnpm
         uses: pnpm/action-setup@v4
       - name: ⬇️🟢 Setup node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 24
           cache: 'pnpm'
 
       - name: 🐙😺 Check GitHub API Rate Limit
@@ -65,17 +65,17 @@ jobs:
 
       # Playwright binaries
       - name: Get installed Playwright version
-        id: playwright-version
-        run: echo "PLAYWRIGHT_VERSION=$( node -e "console.log(require('./package.json').devDependencies['@playwright/test'])" )" >> $GITHUB_ENV
+        id: playwright_data
+        run: echo "version=$( node -e "console.log(require('./package.json').devDependencies['@playwright/test'])" )" >> $GITHUB_OUTPUT
       - name: Cache playwright binaries
-        uses: actions/cache@v3
-        id: playwright-cache
+        uses: actions/cache@v5
+        id: playwright_cache
         with:
           path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-${{ env.PLAYWRIGHT_VERSION }}
+          key: ${{ runner.os }}-playwright-${{ steps.playwright_data.outputs.version }}
       - name: ⬇️🌐 Install Playwright Browsers
-        run: pnpx playwright install --with-deps
-        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        run: pnpx playwright install chromium --with-deps
+        if: steps.playwright_cache.outputs.cache-hit != 'true'
 
       #########################################################################
       # BUILD
@@ -114,8 +114,8 @@ jobs:
         uses: changesets/action@v1
         with:
           title: "chore(release): version packages 🦋"
-          publish: pnpm . pkg publish --silent
-          version: pnpm . pkg version --silent
+          publish: pnpm - pkg publish --silent
+          version: pnpm - pkg version --silent
           commit: "chore(release): version packages 🦋 [skip ci]"
           createGithubReleases: true
         env:
@@ -151,7 +151,7 @@ jobs:
         id: check_package_json
       - name: ℹ️🐙😺➡️ Update repo info
         if: steps.check_package_json.outputs.stdout != 'No changes in package.json'
-        run: pnpm . gh info update
+        run: pnpm - gh info update
         continue-on-error: true
 
       #########################################################################

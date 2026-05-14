@@ -1,6 +1,6 @@
 {
 	"name": "@structium/hcl",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize hcl2 files",
 	"keywords": [
 		"deserialize",
@@ -56,7 +56,7 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"hcl2-parser": "1.0.3"
+		"hcl2-parser": "~1.0.3"
 	},
 	"publishConfig": {
 		"access": "public",

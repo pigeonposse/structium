@@ -42,6 +42,11 @@ export const run = async opts => {
 		'esm',
 	].join( ' ' )
 
+	// console.log( {
+	// 	nccCommand,
+	// 	tsupCommand,
+	// } )
+
 	await exec( nccCommand )
 	await exec( tsupCommand )
 

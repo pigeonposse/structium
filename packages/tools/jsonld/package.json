@@ -1,6 +1,6 @@
 {
 	"name": "@structium/jsonld",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Serialize and deserialize JSON-LD",
 	"keywords": [
 		"deserialize",
@@ -55,8 +55,8 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"@types/jsonld": "1.5.15",
-		"jsonld": "9.0.0"
+		"@types/jsonld": "~1.5.15",
+		"jsonld": "~9.0.0"
 	},
 	"publishConfig": {
 		"access": "public",

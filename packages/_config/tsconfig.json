@@ -32,7 +32,5 @@
 		"importHelpers": true,
 		"removeComments": false,
 		"allowSyntheticDefaultImports": true,
-		"outDir": "./dist",
-		"baseUrl": "./src"
 	},
 }

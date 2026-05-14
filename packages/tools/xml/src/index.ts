@@ -1,10 +1,13 @@
 
+import XMLBuilder   from 'fast-xml-builder'
 import {
 	XMLParser,
-	XMLBuilder,
-	type validationOptions,
 	type X2jOptions,
 } from 'fast-xml-parser'
+import {
+	SyntaxValidator,
+	type validationOptions,
+} from 'fast-xml-validator'
 
 import type { CommonObj } from '../../_shared'
 
@@ -27,8 +30,11 @@ export const deserialize = async <Res extends CommonObj = CommonObj>( input: str
 			validation, ...rest
 		} = options || {}
 
-		const parser = new XMLParser( rest )
-		const res    = parser.parse( input, validation )
+		const parser    = new XMLParser( rest )
+		const validated =  SyntaxValidator.validate( input, validation )
+
+		if ( validated !== true ) throw new Error( validated.err.msg )
+		const res = parser.parse( input )
 
 		return res as Res
 

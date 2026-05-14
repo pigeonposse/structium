@@ -1,5 +1,14 @@
 # structium
 
+## 0.0.6
+
+### Patch Changes
+
+- up deps, up env
+
+- Updated dependencies []:
+  - @structium/aio@0.0.6
+
 ## 0.0.5
 
 ### Patch Changes
