@@ -1,5 +1,11 @@
 # @structium/asn1
 
+## 0.0.8
+
+### Patch Changes
+
+- Add srt library
+
 ## 0.0.7
 
 ### Patch Changes

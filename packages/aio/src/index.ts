@@ -16,6 +16,7 @@ export * as plist from '@structium/plist'
 export * as css from '@structium/css'
 export * as javascript from '@structium/javascript'
 export * as typescript from '@structium/typescript'
+export * as srt from '@structium/srt'
 export {
 	html,
 	markdown,

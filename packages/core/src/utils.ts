@@ -216,9 +216,9 @@ export const getJSON = async ( path: string ) => {
 		return JSON.parse( content )
 
 	}
-	catch ( _e ) {
+	catch ( e ) {
 
-		throw new Error( `JSON file not found: ${path}` )
+		throw new Error( `JSON file not found: ${path}`, { cause: e } )
 
 	}
 

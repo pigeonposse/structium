@@ -1,5 +1,32 @@
 # @structium/utils
 
+## 0.0.8
+
+### Patch Changes
+
+- Add srt library
+
+- Updated dependencies []:
+  - @structium/asn1@0.0.8
+  - @structium/cson@0.0.8
+  - @structium/css@0.0.8
+  - @structium/csv@0.0.8
+  - @structium/env@0.0.8
+  - @structium/graphql@0.0.8
+  - @structium/html-markdown@0.0.8
+  - @structium/ini@0.0.8
+  - @structium/javascript@0.0.8
+  - @structium/json@0.0.8
+  - @structium/jsonld@0.0.8
+  - @structium/lua@0.0.8
+  - @structium/plist@0.0.8
+  - @structium/sql@0.0.8
+  - @structium/svg@0.0.8
+  - @structium/toml@0.0.8
+  - @structium/typescript@0.0.8
+  - @structium/xml@0.0.8
+  - @structium/yaml@0.0.8
+
 ## 0.0.7
 
 ### Patch Changes

@@ -54,20 +54,22 @@ const errorStyle = color.redBright
 type ClippiumDataWithPlugins = typeof data & { commands: { [ commandName: string | keyof typeof tools ]: typeof comandData & { desc: string } } }
 
 const cli = new Clippium<ClippiumDataWithPlugins>( data as ClippiumDataWithPlugins, {
-	help : { formatter : formatter( {
-		title         : color.cyan.inverse.bold,
-		bin           : color.cyan,
-		version       : color.cyan.dim.italic,
-		name          : color.bold,
-		positionals   : color.green.dim,
-		commands      : color.green,
-		flags         : color.yellow,
-		desc,
-		examples      : color.cyan,
-		sectionTitle  : color.white.bold.underline,
-		sectionDesc   : desc,
-		sectionsProps : desc.italic,
-	} ) },
+	help : {
+		formatter : formatter( {
+			title         : color.cyan.inverse.bold,
+			bin           : color.cyan,
+			version       : color.cyan.dim.italic,
+			name          : color.bold,
+			positionals   : color.green.dim,
+			commands      : color.green,
+			flags         : color.yellow,
+			desc,
+			examples      : color.cyan,
+			sectionTitle  : color.white.bold.underline,
+			sectionDesc   : desc,
+			sectionsProps : desc.italic,
+		} ),
+	},
 	error : { on: ( { error } ) => console.error( errorStyle( error.message ) ) },
 } )
 
@@ -78,9 +80,9 @@ const getConfig = async ( path?: string ) => {
 		return await findAndImport<Config>( path ? [ path ] : CONFIG_FILES )
 
 	}
-	catch ( _e ) {
+	catch ( e ) {
 
-		throw new Error( `Config file not found: ${path}` )
+		throw new Error( `Config file not found: ${path}`, { cause: e } )
 
 	}
 

@@ -37,37 +37,44 @@ export const data = defineData( {
 	},
 } )
 
-const flagsData = defineData( { flags : {
-	input : {
-		alias : [ 'i' ],
-		type  : 'string',
-		desc  : 'Input file path',
+const flagsData = defineData( {
+	flags : {
+		input : {
+			alias : [ 'i' ],
+			type  : 'string',
+			desc  : 'Input data (path/url/content)',
+		},
+		output : {
+			alias : [ 'o' ],
+			type  : 'string',
+			desc  : 'Output file path',
+		},
 	},
-	output : {
-		alias : [ 'o' ],
-		type  : 'string',
-		desc  : 'Output file path',
-	},
-} } )
+} )
 
-export const comandData = defineData( { commands : {
-	deserialize : {
-		desc : 'Deserialize a string into an object',
-		...flagsData,
+const deDesc = 'Deserialize/Parse a string into an object'
+const seDesc = 'Serialize/Stringify an object into a string'
+
+export const comandData = defineData( {
+	commands : {
+		deserialize : {
+			desc : deDesc,
+			...flagsData,
+		},
+		parse : {
+			desc : deDesc,
+			...flagsData,
+		},
+		serialize : {
+			desc : seDesc,
+			...flagsData,
+		},
+		stringify : {
+			desc : seDesc,
+			...flagsData,
+		},
 	},
-	parse : {
-		desc : 'Parse a string into an object',
-		...flagsData,
-	},
-	serialize : {
-		desc : 'Serialize an object into a string',
-		...flagsData,
-	},
-	stringify : {
-		desc : 'Stringify an object into a string',
-		...flagsData,
-	},
-} } )
+} )
 
 export {
 	name,

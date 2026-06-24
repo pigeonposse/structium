@@ -3,6 +3,7 @@
 	"compilerOptions": {
 		"declaration": true,
 		"emitDeclarationOnly": false,
+		"rootDir": "."
 	},
 	"include": [
 		"src",

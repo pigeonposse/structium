@@ -1,6 +1,6 @@
 {
 	"name": "@structium/graphql",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Serialize and deserialize graphQL",
 	"keywords": [
 		"deserialize",

@@ -1,9 +1,8 @@
 {
-	"name": "@structium/csv",
+	"name": "@structium/srt",
 	"version": "0.0.8",
-	"description": "Serialize and deserialize CSV",
+	"description": "Serialize and deserialize SRT",
 	"keywords": [
-		"csv",
 		"deserialize",
 		"files",
 		"format",
@@ -11,9 +10,11 @@
 		"node",
 		"pigeonposse",
 		"pp",
-		"serialize"
+		"serialize",
+		"srt",
+		"subtitle"
 	],
-	"homepage": "https://structium.pigeonposse.com/guide/csv",
+	"homepage": "https://structium.pigeonposse.com/guide/srt",
 	"bugs": {
 		"url": "https://github.com/pigeonposse/structium/issues",
 		"email": "dev@pigeonposse.com"
@@ -21,7 +22,7 @@
 	"repository": {
 		"type": "https",
 		"url": "https://github.com/pigeonposse/structium/",
-		"directory": "packages/tools/csv"
+		"directory": "packages/tools/srt"
 	},
 	"funding": {
 		"type": "individual",
@@ -55,8 +56,7 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"csv-parse": "6.2.1",
-		"csv-stringify": "6.7.0"
+		"srt-parser-2": "~1.2.3"
 	},
 	"publishConfig": {
 		"access": "public",

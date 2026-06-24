@@ -9,7 +9,7 @@ describe( name, () => {
 
 	it( 'should execute "index" without errors', async () => {
 
-		await import( '../examples/bin' )
+		await import( './index.example' )
 
 	} )
 

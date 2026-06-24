@@ -1,6 +1,6 @@
 {
 	"name": "@structium/aio",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "All in one structium packages. Serialize and deserialize any data structure",
 	"keywords": [
 		"deserialize",
@@ -68,6 +68,7 @@
 		"@structium/lua": "workspace:*",
 		"@structium/plist": "workspace:*",
 		"@structium/sql": "workspace:*",
+		"@structium/srt": "workspace:*",
 		"@structium/svg": "workspace:*",
 		"@structium/toml": "workspace:*",
 		"@structium/typescript": "workspace:*",
