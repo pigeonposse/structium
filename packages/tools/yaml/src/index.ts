@@ -1,8 +1,12 @@
-import yamlLib from 'js-yaml'
+import {
+	load, dump,
+	type DumpOptions,
+	type LoadOptions,
+} from 'js-yaml'
 
 import { type CommonObj } from '../../_shared'
 
-type DeserializeOptions = yamlLib.LoadOptions
+type DeserializeOptions = LoadOptions
 
 /**
  * Deserialize a YAML string into an object.
@@ -25,11 +29,11 @@ type DeserializeOptions = yamlLib.LoadOptions
  */
 export const deserialize = async <Res extends CommonObj = CommonObj>( content: string, options?: DeserializeOptions ) => {
 
-	return yamlLib.load( content, options ) as Res
+	return load( content, options ) as Res
 
 }
 
-type SerializeOptions = yamlLib.DumpOptions
+type SerializeOptions = DumpOptions
 
 /**
  * Serializes an object into a YAML string.
@@ -40,5 +44,5 @@ type SerializeOptions = yamlLib.DumpOptions
  */
 
 export const serialize = async ( content: object, options?: SerializeOptions ) =>
-	await yamlLib.dump( content, options )
+	await dump( content, options )
 

@@ -4,6 +4,7 @@ import {
 	Utf8String,
 	Integer,
 	OctetString,
+
 } from 'asn1js'
 
 export type ASN1Value = string | number | Uint8Array
@@ -54,30 +55,32 @@ export const deserialize = async ( input: ArrayBuffer ): Promise<ASN1Data> => {
 
 export const serialize = async ( input: ASN1Data ): Promise<ArrayBuffer> => {
 
-	const sequence = new Sequence( { value : Object.entries( input ).map( ( [ _, val ] ) => {
+	const sequence = new Sequence( {
+		value : Object.entries( input ).map( ( [ _, val ] ) => {
 
-		if ( typeof val === 'string' ) {
+			if ( typeof val === 'string' ) {
 
-			return new Utf8String( { value: val } )
+				return new Utf8String( { value: val } )
 
-		}
-		else if ( typeof val === 'number' ) {
+			}
+			else if ( typeof val === 'number' ) {
 
-			return new Integer( { value: val } )
+				return new Integer( { value: val } )
 
-		}
-		else if ( val instanceof Uint8Array ) {
+			}
+			else if ( val instanceof Uint8Array ) {
 
-			return new OctetString( { valueHex: val } )
+				return new OctetString( { valueHex: val } )
 
-		}
-		else {
+			}
+			else {
 
-			throw new Error( `Unsupported value type: ${typeof val}` )
+				throw new Error( `Unsupported value type: ${typeof val}` )
 
-		}
+			}
 
-	} ) } )
+		} ),
+	} )
 
 	return sequence.toBER()
 

@@ -1,9 +1,14 @@
 import {
-	deserialize,
-	serialize,
-} from '.' // '../dist/index.js'
+	getDirFromURL, Tools,
+} from '@structium/repo-config/example'
 
-const encoded = await serialize( {
+import type {
+	deserialize, serialize,
+} from '.'
+
+const tools              = new Tools<typeof deserialize, typeof serialize>( { packageDir: getDirFromURL( import.meta.url, '..' ) } )
+const { serialize: ser } = await tools.get()
+const encoded            = await ser( {
 	name : 'Alice',
 	age  : 30,
 	data : new Uint8Array( [
@@ -12,7 +17,24 @@ const encoded = await serialize( {
 		3,
 	] ),
 } )
-
 console.log( encoded )
-const decoded = await deserialize( encoded )
-console.log( decoded )
+
+// await tools.run( `World-Schema DEFINITIONS AUTOMATIC TAGS ::= BEGIN
+// /* title : Rocket */
+// Root ::= SEQUENCE {
+//     name UTF8String(SIZE(1..16)),
+//     message UTF8String DEFAULT "Hello World",
+//     fuel ENUMERATED {
+//         solid,
+//         liquid,
+//         gas
+//     },
+//     speed CHOICE {
+//         kmph INTEGER,
+//         mph INTEGER
+//     } OPTIONAL,
+//     payload SEQUENCE OF UTF8String
+// }
+// END
+// ` )
+

@@ -1,7 +1,7 @@
 {
 	"name": "@structium/srt",
 	"version": "0.0.8",
-	"description": "Serialize and deserialize SRT",
+	"description": "Serialize and deserialize SRT files",
 	"keywords": [
 		"deserialize",
 		"files",

@@ -1,19 +1,19 @@
 {
-	"name": "@structium/lua",
+	"name": "@structium/mermaid",
 	"version": "0.0.8",
-	"description": "Serialize and deserialize lua",
+	"description": "Serialize and deserialize mermaid",
 	"keywords": [
 		"deserialize",
 		"files",
 		"format",
 		"library",
-		"lua",
+		"mermaid",
 		"node",
 		"pigeonposse",
 		"pp",
 		"serialize"
 	],
-	"homepage": "https://structium.pigeonposse.com/guide/lua",
+	"homepage": "https://structium.pigeonposse.com/guide/mermaid",
 	"bugs": {
 		"url": "https://github.com/pigeonposse/structium/issues",
 		"email": "dev@pigeonposse.com"
@@ -21,7 +21,7 @@
 	"repository": {
 		"type": "https",
 		"url": "https://github.com/pigeonposse/structium/",
-		"directory": "packages/tools/lua"
+		"directory": "packages/tools/mermaid"
 	},
 	"funding": {
 		"type": "individual",
@@ -55,9 +55,7 @@
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
-		"@types/luaparse": "~0.2.13",
-		"luamin": "~1.0.4",
-		"luaparse": "~0.3.1"
+		"mermaid-ast": "~0.8.2"
 	},
 	"publishConfig": {
 		"access": "public",

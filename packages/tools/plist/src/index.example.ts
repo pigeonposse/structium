@@ -1,9 +1,14 @@
 import {
-	deserialize,
-	serialize,
-} from '../dist/index.js' // for test
+	getDirFromURL, Tools,
+} from '@structium/repo-config/example'
 
-const data = `
+import type {
+	deserialize, serialize,
+} from '.'
+
+const tools = new Tools<typeof deserialize, typeof serialize>( { packageDir: getDirFromURL( import.meta.url, '..' ) } )
+
+await tools.run( `
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -21,11 +26,5 @@ const data = `
     </dict>
   </dict>
 </plist>
-`
+` )
 
-const obj = await deserialize( data )
-console.log( 'Deerialize' )
-console.log( obj )
-const string = await serialize( obj )
-console.log( 'Serialize' )
-console.log( string )

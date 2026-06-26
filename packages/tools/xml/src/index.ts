@@ -39,10 +39,10 @@ export const deserialize = async <Res extends CommonObj = CommonObj>( input: str
 		return res as Res
 
 	}
-	catch ( error ) {
+	catch ( e ) {
 
 		// @ts-ignore
-		throw new Error( `Error parsing XML content: ${error.message}` )
+		throw new Error( `Error parsing XML content: ${e.message}`, { cause: e } )
 
 	}
 

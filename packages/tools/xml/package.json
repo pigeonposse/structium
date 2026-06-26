@@ -49,14 +49,14 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "node build.js",
+		"build": "tsup",
 		"dev": "pnpm dlx tsx src/index.example.ts",
 		"test": "vitest run"
 	},
 	"devDependencies": {
 		"@structium/repo-config": "workspace:*",
 		"fast-xml-builder": "~1.2.0",
-		"fast-xml-parser": "~5.8.0",
+		"fast-xml-parser": "~5.9.3",
 		"fast-xml-validator": "~1.1.0"
 	},
 	"publishConfig": {

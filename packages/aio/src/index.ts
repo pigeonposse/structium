@@ -17,6 +17,8 @@ export * as css from '@structium/css'
 export * as javascript from '@structium/javascript'
 export * as typescript from '@structium/typescript'
 export * as srt from '@structium/srt'
+export * as mermaid from '@structium/mermaid'
+export * as properties from '@structium/properties'
 export {
 	html,
 	markdown,

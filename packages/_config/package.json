@@ -26,7 +26,9 @@
 	"type": "module",
 	"exports": {
 		"./build-lib": "./build.lib.js",
+		"./example": "./src/example.ts",
 		"./tsconfig.json": "./tsconfig.json",
+		"./tsup": "./tsup.config.ts",
 		"./unbuild": "./build.config.js",
 		"./vitest": "./vitest.config.js"
 	}

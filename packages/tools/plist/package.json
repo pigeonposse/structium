@@ -49,7 +49,7 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "node build.js",
+		"build": "tsup",
 		"dev": "pnpm dlx tsx src/index.example.ts",
 		"test": "vitest run"
 	},

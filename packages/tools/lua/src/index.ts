@@ -1,3 +1,5 @@
+// @ts-ignore
+import luamin    from 'luamin'
 import { parse } from 'luaparse'
 
 import type {
@@ -6,7 +8,7 @@ import type {
 } from 'luaparse'
 
 export type AST = Chunk
-export type DeserializeOptions = Partial<Options>
+export type DeserializeOptions = Omit<Partial<Options>, 'scope'>
 export type SerializeOptions = never // No serialize built-in
 
 /**
@@ -21,15 +23,18 @@ export const deserialize = async (
 	options?: DeserializeOptions,
 ): Promise<AST> => {
 
-	return parse( input, options )
+	return parse( input, {
+		...options,
+		scope : true,
+	} )
 
 }
 
 export const serialize = async (
-	_input: AST,
+	input: AST,
 	_options?: SerializeOptions,
 ): Promise<string> => {
 
-	throw new Error( 'serialize() not implemented for Lua AST' )
+	return await luamin.minify( input )
 
 }
